@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="uft-8">
+    <title>
+    Form Page
+</title>
+
+</head>
+
+<body>
+<p>
+    <h1>
+        Document Jason Kristian
+    </h1>
+isi form anda di bawah ini
+</p>
+<hr>
+
+<label for ="name">
+    <b>Name</b></label>
+    <input type = "text"
+    name="name" id="name"
+    required>
+<br>
+<br>
+<label for ="email">
+    <b>Email</b></label>
+    <input type = "text"
+    name="email" id="email"
+    required>
+<br>    
+<br>
+<label for ="password">
+    <b>Password</b></label>
+    <input type = "password"
+    name="pwd" id="pwd"
+        required>
+<br>
+<br>
+<label for ="umur">
+    <b>Umur</b></label>
+    <input type = "number"
+    name="quantity" id="quantity"
+    required>
+<br>
+<br>
+<label for ="alamat">
+    <b>Alamat</b></label>
+    <input type = "text"
+    name="alamat" id="alamat"
+    required>
+<br>
+<br>
+<label for ="tanggallahir">
+    <b>Tanggal Lahir</b></label>
+    <input type = "date"
+    name="birthday" id="birthday"
+    required>    
+<br>
+<br>
+<form>
+   <td> <button onclick="idup()">submit</button></td>
+</form>
+<script>
+
+function idup()
+{
+var name = document.getElementById('name').value;
+var email = document.getElementById('email').value
+var password = document.getElementById('pwd').value
+var umur = document.getElementById('quantity').value
+var alamat = document.getElementById('alamat').value
+var birthday = document.getElementById('birthday').value
+
+var kuda = "Nama : " + name + "\n" + "Email : " + email + "\n" + "password : " + password + "\n" + "umur : " + umur + "\n" + "address" + alamat + "\n" + "birthday" + birthday;
+   
+alert(kuda);
+}
+
+</script>
+</body>
+</html>
